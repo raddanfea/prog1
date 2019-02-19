@@ -1,0 +1,11 @@
+#include <omp.h>
+
+int main()
+{
+#pragma omp parallel
+  { 
+      #pragma omp for
+      for(;;)
+      {}
+  }
+}
