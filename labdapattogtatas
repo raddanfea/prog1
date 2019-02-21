@@ -33,13 +33,13 @@ main ( void )
         mvprintw ( y, x, "O" );
         refresh ();
         usleep (100000);
-	      clear();
+	clear();
 
         x = x + xmo;
         y = y + ymo;
 
         if ( x>=amx-1 ) {xmo = xmo * -1;}
-	      if ( x<=0 ) {xmo = xmo * -1;}
+	if ( x<=0 ) {xmo = xmo * -1;}
         if ( y<=0 ) {ymo = ymo * -1;}
         if ( y>=amy-1 ) {ymo = ymo * -1;}
     }
