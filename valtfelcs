@@ -1,0 +1,20 @@
+#include <iostream>
+#include <string>
+using namespace std;
+int main()
+{
+	int a = 1;
+	int b = 2;
+	string sel(" ");
+	cout << "A kezdo szamok: " << a << sel << b << "\n";
+
+	int c = a;
+	a = b;
+	b = c;
+	cout << "Uj valtozos felcserelessel: " << a << sel << b << "\n";
+	
+	a = a+b;
+	b = a-b;
+	a = a-b;
+	cout << "Visszacsereles uj valtozo nelkul: " << a << sel << b << "\n";
+}
