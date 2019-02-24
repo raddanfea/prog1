@@ -2,10 +2,6 @@
 
 int main()
 {
-#pragma omp parallel
-  { 
-      #pragma omp for
-      for(;;)
-      {}
-  }
+    #pragma omp parallel
+    for(;;){}
 }
