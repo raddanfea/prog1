@@ -40,7 +40,7 @@ int main()
 	
     cin >> text;  
     int s = 4; 
-    cout << "Eredeti : " << text; 
+    cout << "Eredeti: " << text; 
     cout << "\nL33t: " << encrypt(text)<<"\n"; 
     return 0; 
 } 
