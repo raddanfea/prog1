@@ -33,8 +33,6 @@ string encrypt(string text)
   
     return result; 
 } 
-  
-// Driver program to test the above function 
 string text;
 
 int main() 
