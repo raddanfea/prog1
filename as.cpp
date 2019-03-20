@@ -82,16 +82,13 @@ ifstream file("/dev/input/event2");
 	dram();
 	
     if(file.is_open()) {
-        
-        //lets loop until esc key
+	    
         bool session = true;
         while(session) {
 		dram;
-            
-            //lets get to work
+
             file.read(data, sizeof(event));
             
-            //now copy the data to the struct
             memcpy(&event, data, sizeof(event));
             if(event.type == EV_KEY) {
 		if(event.code == KEY_D) {if (mapdata[y][x+1] != "X") {++x;}; usleep (70000); session = false; break;}
@@ -102,7 +99,6 @@ ifstream file("/dev/input/event2");
 	    }
         }
         
-        //dont forget to close the file
         file.close();
     }
     else {
@@ -111,7 +107,6 @@ ifstream file("/dev/input/event2");
     }
 
 }
-
 
 int
 main ( void )
