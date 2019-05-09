@@ -15,7 +15,6 @@ class Random {
 	private:
 		bool exist; 
 		double value; 
-
 };
 
 
@@ -28,10 +27,9 @@ Random::Random() {
 double Random::get() { 
 	if (!exist)
 	{
-		double u1, u2, v1, v2, w;
-	
+	double u1, u2, v1, v2, w;
+		
 		do{
-
 			u1 = std::rand () / (RAND_MAX + 10.0); 
 			u2 = std::rand () / (RAND_MAX + 1.0);
 			v1 = 2 * u1 - 1;
@@ -46,14 +44,12 @@ double Random::get() {
 		exist = !exist;
 		return r * v1; 
 	}
-	
 	else
 	{	
 		return value;
 		exist = !exist;
 	}
 };    
-
 int main() 
 {
 	Random rnd;
